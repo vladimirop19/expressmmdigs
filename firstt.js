@@ -4,15 +4,16 @@
 
 
 /**
- * @param {number} num
+ * @param {string} input
  * @return {String}
 **/
 
-exports.getminmaxd = function(num) {
+exports.getminmaxd = function(input) {
   var max;
   var min;
   var remains;
-  if (typeof(num) == 'number') {
+  var num = parseInt(input);
+  if (input === num.toString()) {
     max = 0;
     min = 10;
     num = Math.abs(num);
